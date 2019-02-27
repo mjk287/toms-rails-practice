@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TomsRailsPractice</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav>
+      <ol>
+        <li><%= link_to("Author Index", authors_path)%></li>
+        <li><%= link_to("Book Index", books_path) %></li>
+      </ol>
+      <hr>
+    </nav>
+
+    <%= yield %>
+  </body>
+</html>
